@@ -1,0 +1,149 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:1:1-35:12
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.7.0] /home/user1/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.7.0.aar/b7e4851e28facd10f6a8191bddef4b5b/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/bbd5a46b88bd1fc37b8b299e05b45587/AndroidManifest.xml:17:1-22:12
+MERGED from [io.reactivex:rxandroid:1.2.1] /home/user1/.gradle/caches/transforms-1/files-1.1/rxandroid-1.2.1.aar/ae0671144b3b3793914917023bcc2bb0/AndroidManifest.xml:15:1-21:12
+MERGED from [com.android.support:support-fragment:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/9a59471e49c602ddfe6f9145418b8796/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/41ef2f20493b8319ca264fd2717cb94b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/8b3a1da6faa890b5b7741f839f5c6a3d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/ba9bb2a93695966b5bd300ddb3049e80/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/902bedf3be9b254eefc1f6fb7eb9d271/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:exifinterface:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.1.aar/9c20d9c9278d9478fbf0e8957afe22b7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/1f6a7cc9c27b9932b0d63d2ab61ac28d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/user1/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9f335d14846591ef3db352bb2757a45c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/user1/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/d54b836a4c4b6b68dcbdf2c967e71ba8/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/user1/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b3545cf21e098285bb35b57a012f82a1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /home/user1/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/c2acac7c635d36606f9a62796ef0912c/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:1:1-35:12
+	package
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:2:5-35
+		INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml
+		INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:1:1-35:12
+		INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:1:1-35:12
+		INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:4:5-75
+	android:name
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:4:22-72
+uses-permission#android.permission.CALL_PHONE
+ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:5:5-69
+	android:name
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:5:22-66
+uses-permission#android.permission.INTERNET
+ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.CAMERA
+ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:7:5-65
+	android:name
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:7:22-62
+uses-permission#android.permission.GET_TASKS
+ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:8:5-68
+	android:name
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:8:22-65
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:10:22-76
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:11:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:12:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:13:22-77
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:14:22-78
+application
+ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:17:5-34:19
+	android:supportsRtl
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:22:9-35
+	android:label
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:20:9-41
+	android:roundIcon
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:21:9-54
+	android:icon
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:19:9-43
+	android:allowBackup
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:18:9-35
+	android:theme
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:23:9-40
+activity#manasvi.image.picker.ImagePicker
+ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:25:5-33:16
+	android:screenOrientation
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:27:9-45
+	android:name
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:26:9-56
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:28:9-32:25
+action#android.intent.action.MAIN
+ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:29:13-65
+	android:name
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:29:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:31:13-73
+	android:name
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml:31:23-70
+uses-sdk
+INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml
+INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.7.0] /home/user1/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.7.0.aar/b7e4851e28facd10f6a8191bddef4b5b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.7.0] /home/user1/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.7.0.aar/b7e4851e28facd10f6a8191bddef4b5b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/bbd5a46b88bd1fc37b8b299e05b45587/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/bbd5a46b88bd1fc37b8b299e05b45587/AndroidManifest.xml:20:5-44
+MERGED from [io.reactivex:rxandroid:1.2.1] /home/user1/.gradle/caches/transforms-1/files-1.1/rxandroid-1.2.1.aar/ae0671144b3b3793914917023bcc2bb0/AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex:rxandroid:1.2.1] /home/user1/.gradle/caches/transforms-1/files-1.1/rxandroid-1.2.1.aar/ae0671144b3b3793914917023bcc2bb0/AndroidManifest.xml:19:5-43
+MERGED from [com.android.support:support-fragment:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/9a59471e49c602ddfe6f9145418b8796/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/9a59471e49c602ddfe6f9145418b8796/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/41ef2f20493b8319ca264fd2717cb94b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/41ef2f20493b8319ca264fd2717cb94b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/8b3a1da6faa890b5b7741f839f5c6a3d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/8b3a1da6faa890b5b7741f839f5c6a3d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/ba9bb2a93695966b5bd300ddb3049e80/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/ba9bb2a93695966b5bd300ddb3049e80/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/902bedf3be9b254eefc1f6fb7eb9d271/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/902bedf3be9b254eefc1f6fb7eb9d271/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.1.aar/9c20d9c9278d9478fbf0e8957afe22b7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.1.aar/9c20d9c9278d9478fbf0e8957afe22b7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/1f6a7cc9c27b9932b0d63d2ab61ac28d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/user1/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/1f6a7cc9c27b9932b0d63d2ab61ac28d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/user1/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9f335d14846591ef3db352bb2757a45c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/user1/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/9f335d14846591ef3db352bb2757a45c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/user1/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/d54b836a4c4b6b68dcbdf2c967e71ba8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/user1/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/d54b836a4c4b6b68dcbdf2c967e71ba8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/user1/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b3545cf21e098285bb35b57a012f82a1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/user1/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/b3545cf21e098285bb35b57a012f82a1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/user1/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/c2acac7c635d36606f9a62796ef0912c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/user1/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/c2acac7c635d36606f9a62796ef0912c/AndroidManifest.xml:20:5-44
+INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml
+INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml
+		INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml
+		ADDED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml
+		INJECTED from /home/user1/Downloads/FetchImageUtil/app/src/main/AndroidManifest.xml
