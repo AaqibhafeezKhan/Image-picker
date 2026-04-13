@@ -30,23 +30,82 @@ dependencies {
 ```
 
 ## Usage  
-Start by creating an instance of ImagePicker and ImageCallBackManager can be called in onCreate().
-ImagePicker imagePicker = new ImagePicker(this, onFileChoose);; ImageCallBackManager callBackManager = imagePicker.getCallBackManager();
 
-Callback listener
-private ImagePicker.OnFileChoose onFileChoose = new ImagePicker.OnFileChoose() { @Override public void onFileChoose(String fileUri, int requestCode) { // here you will get captured or selected image... } };
+### 1. Initialize ImagePicker
+Create an instance of `ImagePicker` and `ImageCallBackManager` in your `onCreate()`.
 
-Call below lines on onRequestPermissionsResult and onActivityResult
-@Override public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) { super.onRequestPermissionsResult(requestCode, permissions, grantResults); if (callBackManager != null) { callBackManager.onRequestPermissionsResult(requestCode, permissions, grantResults); } }
+```java
+ImagePicker imagePicker = new ImagePicker(this, onFileChoose);
+ImageCallBackManager callBackManager = imagePicker.getCallBackManager();
+```
 
-@Override protected void onActivityResult(int requestCode, int resultCode, Intent data) { super.onActivityResult(requestCode, resultCode, data); if (callBackManager != null) { callBackManager.onActivityResult(requestCode, resultCode, data); } }
+### 2. Implement Callback Listener
+Define the callback to receive the captured or selected image path.
 
-Open Camera picker.
-imagePicker.requestImageCamera(CAMERA_PERMISSION, true, true); // pass false if you dont want to allow image crope
+```java
+private ImagePicker.OnFileChoose onFileChoose = new ImagePicker.OnFileChoose() { 
+    @Override 
+    public void onFileChoose(String fileUri, int requestCode) { 
+        // Here you will get the path of the captured or selected image... 
+    } 
+};
+```
 
-Open gallery picker.
+### 3. Handle Permissions and Activity Results
+Forward the results to the `callBackManager`.
+
+```java
+@Override 
+public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) { 
+    super.onRequestPermissionsResult(requestCode, permissions, grantResults); 
+    if (callBackManager != null) { 
+        callBackManager.onRequestPermissionsResult(requestCode, permissions, grantResults); 
+    } 
+}
+
+@Override 
+protected void onActivityResult(int requestCode, int resultCode, Intent data) { 
+    super.onActivityResult(requestCode, resultCode, data); 
+    if (callBackManager != null) { 
+        callBackManager.onActivityResult(requestCode, resultCode, data); 
+    } 
+}
+```
+
+### 4. Open Picker
+You can open either the Camera or the Gallery.
+
+**Open Camera Picker:**
+```java
+// Pass false as the second argument if you don't want to allow image cropping
+imagePicker.requestImageCamera(CAMERA_PERMISSION, true, true); 
+```
+
+**Open Gallery Picker:**
+```java
 imagePicker.requestImageGallery(STORAGE_PERMISSION_IMAGE, true, true);
+```
 
-Add below code to your manifest
+### 5. Update AndroidManifest.xml
+Add the `FileProvider` to your manifest and include the following XML resource.
 
-@xml/provider_paths
+**Manifest Entry:**
+```xml
+<provider
+    android:name="android.support.v4.content.FileProvider"
+    android:authorities="${applicationId}"
+    android:exported="false"
+    android:grantUriPermissions="true">
+    <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/provider_paths" />
+</provider>
+```
+
+**@xml/provider_paths:**
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="external_files" path="."/>
+</paths>
+```
