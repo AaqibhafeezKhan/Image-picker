@@ -3,35 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ImagePicker Library</title>
+    <title>ImagePicker - Android Library</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 0 20px; }
-        h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; font-family: monospace; }
-        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
-        .section { margin-bottom: 30px; }
-        a { color: #0366d6; text-decoration: none; }
+        :root { --primary: #0366d6; --bg: #fff; --text: #24292e; --code-bg: #f6f8fa; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); max-width: 850px; margin: 0 auto; padding: 40px 20px; background: var(--bg); }
+        h1, h2, h3 { border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; margin-top: 24px; margin-bottom: 16px; font-weight: 600; }
+        h1 { font-size: 2em; } h2 { font-size: 1.5em; } h3 { font-size: 1.25em; border-bottom: none; }
+        code { background: var(--code-bg); padding: 0.2em 0.4em; border-radius: 3px; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 85%; }
+        pre { background: var(--code-bg); padding: 16px; border-radius: 6px; overflow: auto; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 85%; line-height: 1.45; }
+        a { color: var(--primary); text-decoration: none; }
         a:hover { text-decoration: underline; }
+        .feature-list { padding-left: 20px; }
+        .footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #eaecef; color: #6a737d; font-size: 0.9em; text-align: center; }
     </style>
 </head>
 <body>
     <h1>ImagePicker</h1>
-    <p>Android library to pick images from Gallery and Camera with auto-rotation, cropping, and compression.</p>
+    <p>Android library to pick images from Gallery and camera. Includes rotation handling (EXIF), cropping, and compression.</p>
 
-    <div class="section">
-        <h2>Installation</h2>
-        <p>Add JitPack to project <code>build.gradle</code>:</p>
-        <pre>maven { url 'https://jitpack.io' }</pre>
-        <p>Add dependency to app <code>build.gradle</code>:</p>
-        <pre>implementation 'com.github.AaqibhafeezKhan:Image-picker:0.1.2'</pre>
+    <h2>Features</h2>
+    <ul class="feature-list">
+        <li>Easy implementation</li>
+        <li>No manual runtime permissions boilerplate</li>
+        <li>Image rotation handling using EXIF</li>
+        <li>Built-in cropping and compression</li>
+        <li>Native file path handling</li>
+    </ul>
+
+    <h2>Installation</h2>
+    <p>Add JitPack to project <code>build.gradle</code>:</p>
+    <pre>allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}</pre>
+    <p>Add dependency to app <code>build.gradle</code>:</p>
+    <pre>implementation 'com.github.AaqibhafeezKhan:Image-picker:0.1.2'</pre>
+
+    <h2>Usage</h2>
+    <h3>1. Initialize</h3>
+    <pre>ImagePicker imagePicker = new ImagePicker(this, onFileChoose);
+ImageCallBackManager callBackManager = imagePicker.getCallBackManager();</pre>
+
+    <h3>2. Callback</h3>
+    <pre>private ImagePicker.OnFileChoose onFileChoose = new ImagePicker.OnFileChoose() { 
+    @Override 
+    public void onFileChoose(String fileUri, int requestCode) { 
+        // Image path received here
+    } 
+};</pre>
+
+    <h3>3. Forward Results</h3>
+    <pre>@Override 
+public void onRequestPermissionsResult(...) { 
+    callBackManager.onRequestPermissionsResult(...); 
+}
+
+@Override 
+protected void onActivityResult(...) { 
+    callBackManager.onActivityResult(...); 
+}</pre>
+
+    <h3>4. Open Picker</h3>
+    <pre>imagePicker.requestImageCamera(PERMISSION_CODE, true, true); 
+imagePicker.requestImageGallery(PERMISSION_CODE, true, true);</pre>
+
+    <div class="footer">
+        <p><a href="https://github.com/AaqibhafeezKhan/Image-picker">View Repository on GitHub</a></p>
     </div>
-
-    <div class="section">
-        <h2>Usage</h2>
-        <pre>ImagePicker imagePicker = new ImagePicker(this, onFileChoose);
-imagePicker.requestImageCamera(101, true, true);</pre>
-    </div>
-
-    <p><a href="https://github.com/AaqibhafeezKhan/Image-picker">View on GitHub</a></p>
 </body>
 </html>
