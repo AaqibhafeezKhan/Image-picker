@@ -24,7 +24,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.+'
+    implementation 'com.github.ArthurHub:Android-Image-Cropper:2.8.0'
     implementation 'io.reactivex:rxandroid:1.2.1'
 
 }
