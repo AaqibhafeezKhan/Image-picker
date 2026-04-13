@@ -6,11 +6,28 @@
 Easy in Implementation. No run time permissions required. Image rotation handling using exif interface. Allow Cropping image. Compress image. No manually handling of image path.
 
 ## Installation  
-Add repository url and dependency in application module gradle file:
+Integrating the Published Library (Client Side)
+Once successfully built on JitPack, anyone can use the library by adding it to their Android project:
 
-allprojects { repositories { ... maven { url 'https://jitpack.io' } } }
+### In the project-level `build.gradle`:
 
-dependencies { implementation 'com.github.manasvii:image_picker_util:0.1.1' }
+```gradle
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+### In the app-level `build.gradle`:
+
+```gradle
+dependencies {
+    implementation 'com.github.AaqibhafeezKhan:Image-picker:0.1.2'
+}
+```
 
 ## Usage  
 Start by creating an instance of ImagePicker and ImageCallBackManager can be called in onCreate().
